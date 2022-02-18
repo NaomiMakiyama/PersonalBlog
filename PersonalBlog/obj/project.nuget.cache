@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VYyPIRZw9dcphLmVk8l2E0VSxZtg90MxS6EZzxyhQRjPTre6ZTYTZJ9aiuFePcKz4nr36krmBli/4WyySKSOkQ==",
+  "success": true,
+  "projectFilePath": "C:\\git\\PersonalBlogNaomi\\PersonalBlog\\PersonalBlog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\naomi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
