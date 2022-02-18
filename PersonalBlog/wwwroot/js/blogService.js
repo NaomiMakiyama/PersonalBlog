@@ -1,16 +1,16 @@
-﻿define([], function () {
+﻿define(['./template.js'], function (template) {
 
     const blogPostUrl = '/Home/LatestBlogPost/';
 
     function loadLatestBlogPosts() {
         fetch(blogPostUrl)
             .then(function (response) {
-                return response.json()
+                return response.json();
             })
             .then(function (data) {
-                console.log(data);
+                template.appendBlogList(data);
             })
-            .catch(functtion(error){
+            .catch(function(error) {
                 console.log('Erro ao carregar blogs:', error);
             });
     }
