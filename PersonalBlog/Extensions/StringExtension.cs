@@ -1,4 +1,7 @@
-﻿public static class StringExtension
+﻿using System.Globalization;
+using System.Text;
+
+public static class StringExtension
 {
     /// <summary>
     /// Creates a URL And SEO friendly slug
