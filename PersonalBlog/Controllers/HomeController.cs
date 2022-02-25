@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PersonalBlog.Models;
+using PersonalBlog.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,10 +13,13 @@ namespace PersonalBlog.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IBlogService _blogService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+            IBlogService blogService)
         {
             _logger = logger;
+            _blogService = blogService;
         }
 
         public IActionResult Index()
@@ -36,16 +40,20 @@ namespace PersonalBlog.Controllers
 
         public JsonResult LatestBlogPost()
         {
-            var posts = new List<BlogPost>()
-            {
-                new BlogPost(){ PostId = 1 , Title = "xxx", ShortDescription = "xxx"},
-                new BlogPost(){ PostId = 2 , Title = "aaa", ShortDescription = "aaa"},
-                new BlogPost(){ PostId = 3 , Title = "bbb", ShortDescription = "bbb"},
-                new BlogPost(){ PostId = 4 , Title = "ccc", ShortDescription = "ccc"}
-            };
-
+            var posts = _blogService.GetLatestPosts();
             return Json(posts);
+        }
 
+        public JsonResult MoreBlogPosts(int oldestBlogPostId)
+        {
+            var posts = _blogService.GetOlderPosts(oldestBlogPostId);
+            return Json(posts);
+        }
+
+
+        public ContentResult Post(string link)
+        {
+            return Content(_blogService.GetPostText(link));
         }
     }
 }
