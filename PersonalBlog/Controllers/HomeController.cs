@@ -43,5 +43,17 @@ namespace PersonalBlog.Controllers
             var posts = _blogService.GetLatestPosts();
             return Json(posts);
         }
+
+        public JsonResult MoreBlogPosts(int oldestBlogPostId)
+        {
+            var posts = _blogService.GetOlderPosts(oldestBlogPostId);
+            return Json(posts);
+        }
+
+
+        public ContentResult Post(string link)
+        {
+            return Content(_blogService.GetPostText(link));
+        }
     }
 }

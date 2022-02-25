@@ -2,9 +2,11 @@
 using PersonalBlog.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace PersonalBlog.Services.Implementation
+namespace PersonalBlog.Services.Impl
 {
     public class BlogServiceImpl : IBlogService
     {
@@ -37,14 +39,27 @@ namespace PersonalBlog.Services.Implementation
             }
         }
 
+        private List<BlogPost> GetLastOrderingPosts(IEnumerable<BlogPost> query)
+        {
+            return query.OrderByDescending(e => e.PostId).Take(3).ToList();
+        }
+
         public List<BlogPost> GetLatestPosts()
         {
-            return Posts.OrderByDescending(e => e.PostId).Take(3).ToList();
+            return GetLastOrderingPosts(Posts);
+        }
+
+        public List<BlogPost> GetOlderPosts(int olderBlogPostId)
+        {
+            var query = Posts.Where(post => post.PostId < olderBlogPostId);
+            return GetLastOrderingPosts(query);
         }
 
         public string GetPostText(string link)
         {
-            throw new NotImplementedException();
+            var post = Posts.FirstOrDefault(post => post.Link == link);
+
+            return File.ReadAllText($"{_env.ContentRootPath}/wwwroot/lib/Posts/{post.PostId}_post.md");
         }
     }
 }

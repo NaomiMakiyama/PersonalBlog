@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PersonalBlog.Services;
-using PersonalBlog.Services.Implementation;
+using PersonalBlog.Services.Impl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
