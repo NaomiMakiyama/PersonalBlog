@@ -7,16 +7,17 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
+<div class="alert alert-info show" id="connection-status"></div>
+
 <div class="blog-list card-columns" id="blog-list"></div>
 
 <div class="center">
     <button class="btn btn-primary" onclick="pageEvents.loadMoreBlogPosts();">Carregar posts anteriores</button>
-    <br/>
-    <br/>
+    <br />
+    <br />
 </div>
 
 <div id="blog-item-container"></div>
-
 
 <script id="blog-card" type="text/template">
     <div class="card">
@@ -29,10 +30,8 @@
 </script>
 
 <script id="blog-item" type="text/template">
-
     <div id="{{Link}}" class="blog-item">
         {{Content}}
     </div>
-    <a href="#blog-title" class="btn btn-primary"></a>
-
+    <a href="#blog-title" class="btn btn-primary">voltar</a>
 </script>
