@@ -1,11 +1,3 @@
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.csproj.AssemblyReference.cache
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.GeneratedMSBuildEditorConfig.editorconfig
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.AssemblyInfoInputs.cache
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.AssemblyInfo.cs
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.csproj.CoreCompileInputs.cache
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.MvcApplicationPartsAssemblyInfo.cache
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.RazorAssemblyInfo.cache
-C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.RazorAssemblyInfo.cs
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\appsettings.Development.json
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\appsettings.json
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\PersonalBlog.exe
@@ -17,6 +9,14 @@ C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\ref\PersonalBlog.dll
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\PersonalBlog.pdb
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\PersonalBlog.Views.dll
 C:\git\PersonalBlogNaomi\PersonalBlog\bin\Debug\net5.0\PersonalBlog.Views.pdb
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.csproj.AssemblyReference.cache
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.AssemblyInfoInputs.cache
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.AssemblyInfo.cs
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.csproj.CoreCompileInputs.cache
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.MvcApplicationPartsAssemblyInfo.cache
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.RazorAssemblyInfo.cache
+C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.RazorAssemblyInfo.cs
 C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\scopedcss\bundle\PersonalBlog.styles.css
 C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\staticwebassets\PersonalBlog.StaticWebAssets.Manifest.cache
 C:\git\PersonalBlogNaomi\PersonalBlog\obj\Debug\net5.0\PersonalBlog.TagHelpers.input.cache
